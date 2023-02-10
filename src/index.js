@@ -11,10 +11,9 @@ refs.searchInput.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch(e) {
     e.preventDefault();
-    const name = e.target.value;
-    const trimName = name.trim();
+    const name = e.target.value.trim();
 
-    if (name == '') {
+    if (name === '') {
         refs.countryList.innerHTML = '';
         refs.countryInfo.innerHTML = '';
         return
