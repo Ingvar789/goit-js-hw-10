@@ -13,7 +13,6 @@ function onSearch(e) {
     e.preventDefault();
     const name = e.target.value;
     const trimName = name.trim();
-    console.log(name);
 
     if (name == '') {
         refs.countryList.innerHTML = '';
