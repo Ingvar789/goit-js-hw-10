@@ -51,7 +51,7 @@ function filterCountries(countries) {
 
 function renderContriesList(countries) {
     let markup = '';
-    for (country of countries) {
+    for (let country of countries) {
      markup += `<li style="max-height:40px; display:flex; margin-bottom:10px; align-items: center;"><img src="${country.flag}" alt="${country.name}" style="margin-right:10px"> ${country.name}</li>`;
     }
     refs.countryList.innerHTML = markup;
