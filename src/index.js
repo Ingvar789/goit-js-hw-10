@@ -19,7 +19,7 @@ function onSearch(e) {
         return
     }
 
-    fetchCountries(trimName)
+    fetchCountries(name)
         .then(countries => { filterCountries(countries) })
         .catch(error => { console.log(error) });
 }
